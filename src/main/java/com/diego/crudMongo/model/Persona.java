@@ -6,12 +6,14 @@ import org.springframework.data.annotation.Id;
 
 public class Persona {
     
+    //Atributos 
     @Id
     private Long id;
     private String nombre;
     private String apellido;
     private String telefono;
     
+    //Metodos Constructores
     public Persona(){
         
     }
@@ -23,6 +25,7 @@ public class Persona {
         this.telefono = telefono;
     }
 
+    //Metodos Getter and Setter
     public Long getId() {
         return id;
     }
