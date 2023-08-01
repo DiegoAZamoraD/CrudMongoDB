@@ -8,7 +8,7 @@ public class Persona {
     
     //Atributos 
     @Id
-    private Long id;
+    private String id;
     private String nombre;
     private String apellido;
     private String telefono;
@@ -18,7 +18,7 @@ public class Persona {
         
     }
     
-    public Persona(Long id, String nombre, String apellido, String telefono){
+    public Persona(String id, String nombre, String apellido, String telefono){
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -26,11 +26,11 @@ public class Persona {
     }
 
     //Metodos Getter and Setter
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

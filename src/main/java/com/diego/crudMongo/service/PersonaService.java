@@ -9,8 +9,8 @@ import java.util.Optional;
 public interface PersonaService {
     
     List<Persona> getAllPersonas();
-    Optional<Persona>getPersonaById(Long id); // Este metodo filtra por id, con optinal permite almacenar un objeto si lo encuetra o puede almacenar nulo
+    Optional<Persona>getPersonaById(String id); // Este metodo filtra por id, con optinal permite almacenar un objeto si lo encuetra o puede almacenar nulo
     Persona savePersona(Persona persona);
-    void deletePersonaById(Long id);
+    void deletePersonaById(String id);
     
 }

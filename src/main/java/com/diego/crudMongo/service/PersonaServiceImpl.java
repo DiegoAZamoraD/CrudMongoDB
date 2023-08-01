@@ -22,7 +22,7 @@ public class PersonaServiceImpl implements PersonaService{
     
     // Select PersonaById
     @Override
-    public Optional<Persona> getPersonaById(Long id) {
+    public Optional<Persona> getPersonaById(String id) {
         return personaRepository.findById(id);
     }
     
@@ -34,7 +34,7 @@ public class PersonaServiceImpl implements PersonaService{
     
     // Delete Persona
     @Override
-    public void deletePersonaById(Long id) {
+    public void deletePersonaById(String id) {
 //        Persona persona = personaRepository.findById(id).orElse(null);
 //        personaRepository.delete(persona);
           personaRepository.deleteById(id);
